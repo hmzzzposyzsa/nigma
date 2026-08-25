@@ -2,12 +2,12 @@
   "name": "nextjs-postgresql-template",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && opennextjs-cloudflare build",
-    "start": "next start",
-    "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
-  },
+  "dev": "next dev",
+  "build": "opennextjs-cloudflare build",
+  "start": "next start",
+  "lint": "eslint .",
+  "typecheck": "tsc --noEmit"
+},
   "dependencies": {
     "@supabase/supabase-js": "^2.112.3",
     "@types/bcryptjs": "^2.4.6",
