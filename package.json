@@ -1,6 +1,7 @@
 {
   "name": "nextjs-postgresql-template",
   "private": true,
+  "trustedDependencies": ["pg-cloudflare"],
   "scripts": {
     "dev": "next dev",
     "build": "next build && opennextjs-cloudflare build --skipNextBuild",
