@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
+import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  serverExternalPackages: ["pg", "pg-cloudflare"],
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [
@@ -9,9 +10,11 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "images.unsplash.com" },
     ],
   },
-  // Compress and optimize the production build
+  output: "standalone",
   compress: true,
   poweredByHeader: false,
 };
+
+initOpenNextCloudflareForDev();
 
 export default nextConfig;
