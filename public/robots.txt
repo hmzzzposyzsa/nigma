@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap (uncomment and edit after deployment)
+# Sitemap: https://your-domain.com/sitemap.xml
